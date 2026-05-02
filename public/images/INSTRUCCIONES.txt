@@ -1,0 +1,25 @@
+Para gestionar el contenido visual, hemos creado esta carpeta `/public/images`.
+
+Por favor, sube aquí las siguientes imágenes con sus nombres originales en minúsculas:
+
+Imágenes principales (Portada y Reflexión Final):
+- portadahorizontal.png (Para vistas de escritorio en la página de inicio)
+- portadatablet.jpeg (Para tabletas)
+- portadamovil.jpeg (Para pantallas móviles)
+- contraportada.jpeg (Para la reflexión final en el pie de la página de inicio)
+
+Imágenes de sección (Miniaturas en las tarjetas de la portada, una por sección de la época monumental):
+- seccion-1.jpeg
+- seccion-2.jpeg
+- seccion-3.jpeg
+- seccion-4.jpeg
+...
+
+Imágenes de capítulo/etapa (La cabecera gigante correspondiente a cada hito, una por capítulo):
+- capitulo-1.jpeg
+- capitulo-2.jpeg
+- capitulo-3.jpeg
+- capitulo-4.jpeg
+...
+
+Una vez subidas, la aplicación enlazará a cada una de ellas automáticamente en la maquetación.

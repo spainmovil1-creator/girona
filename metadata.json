@@ -1,0 +1,8 @@
+{
+  "name": "Guía de Girona: De Gerunda al Siglo XXI",
+  "description": "Una guía histórica, arqueológica y turística de la ciudad de Girona, relatando 2.000 años de historia.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

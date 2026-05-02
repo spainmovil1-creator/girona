@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #fff3c2;
+  --color-brand-text: #111827;
+  --color-brand-heading: #7a4900;
+  --font-serif: "EB Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-serif);
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-text);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-brand-heading);
+  }
+}
