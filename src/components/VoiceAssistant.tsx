@@ -2,8 +2,6 @@ import { Mic, Square, Loader2 } from 'lucide-react';
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { GoogleGenAI, LiveServerMessage, Modality, Type } from '@google/genai';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-
 function base64EncodeAudio(float32Array: Float32Array): string {
   const int16Array = new Int16Array(float32Array.length);
   for (let i = 0; i < float32Array.length; i++) {
@@ -122,6 +120,11 @@ export default function VoiceAssistant({
     setIsConnecting(true);
 
     try {
+      const apiKey = process.env.GEMINI_API_KEY;
+      if (!apiKey) throw new Error("GEMINI_API_KEY no encontrada");
+
+      const ai = new GoogleGenAI({ apiKey });
+      
       lastContextRef.current = cleanContext;
       
       const inputCtx = new AudioContext({ sampleRate: 16000 });
